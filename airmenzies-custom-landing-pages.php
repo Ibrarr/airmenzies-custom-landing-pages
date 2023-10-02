@@ -28,7 +28,6 @@ use App\Templates;
 $templates = new Templates;
 $enqueueScripts = new EnqueueScripts;
 
-
 define('ACLP_IMAGES', plugin_dir_url(__FILE__) . 'src/images/');
 
 define('ACLP_COMPONENTS', plugin_dir_path(__FILE__) . 'templates/components');
