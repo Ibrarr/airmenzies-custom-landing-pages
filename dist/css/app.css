@@ -1,6 +1,9 @@
 @charset "UTF-8";
 :root {
-  --primary-color: #208EF4;
+  --ami-purple: #932682;
+  --ami-blue: #003B78;
+  --ami-text: #333333;
+  --ami-border-radius: 25px;
 }
 
 /*!
@@ -13414,37 +13417,84 @@ textarea.form-control-lg {
 body.page-template-callback-discussion > .boxed-container {
   width: 100% !important;
 }
+body.page-template-callback-discussion h1, body.page-template-callback-discussion .h1, body.page-template-callback-discussion h2, body.page-template-callback-discussion .h2, body.page-template-callback-discussion h3, body.page-template-callback-discussion .h3, body.page-template-callback-discussion h4, body.page-template-callback-discussion .h4, body.page-template-callback-discussion h5, body.page-template-callback-discussion .h5, body.page-template-callback-discussion h6, body.page-template-callback-discussion .h6, body.page-template-callback-discussion p, body.page-template-callback-discussion a {
+  font-family: "Montserrat", sans-serif;
+}
+body.page-template-callback-discussion p {
+  font-size: 16px;
+}
 body.page-template-callback-discussion .header__container {
-  background: #003B78;
+  background: var(--ami-blue);
 }
 body.page-template-callback-discussion .header__container:before, body.page-template-callback-discussion .header__container:after {
   display: none;
 }
-body.page-template-callback-discussion .header__container .header__logo {
+body.page-template-callback-discussion .header__container header {
+  display: block;
+}
+body.page-template-callback-discussion .header__container header .header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: none;
-  height: auto;
-  border: none;
-  padding: 0;
-  margin: 0;
 }
-body.page-template-callback-discussion .header__container .header__logo:after {
-  display: none;
-}
-body.page-template-callback-discussion .header__container .header__logo .header-text {
+body.page-template-callback-discussion .header__container header .header-logo .main-header-text {
   margin: 0 0 0 20px;
   color: #ffffff;
   font-weight: 600;
 }
+body.page-template-callback-discussion .header__container header .header-content {
+  background-color: #ffffff;
+  border-radius: var(--ami-border-radius);
+  padding: 20px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
+  z-index: 1;
+}
+body.page-template-callback-discussion .header__container header .header-content p {
+  color: var(--ami-text);
+}
+body.page-template-callback-discussion .header__container header .header-content .header-cta {
+  display: block;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 150px;
+  font-size: 18px;
+  background-color: var(--ami-purple);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: var(--ami-border-radius);
+}
+body.page-template-callback-discussion .header__container header .header-img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
 body.page-template-callback-discussion footer {
-  background-color: #333333;
+  background-color: var(--ami-text);
+}
+body.page-template-callback-discussion footer:after {
+  display: none;
 }
 body.page-template-callback-discussion footer p {
   color: #ffffff;
   margin: 0;
+}
+body.page-template-callback-discussion #top {
+  margin-top: -60px;
+  padding-top: 60px;
+  background: #ffffff;
+  position: relative;
+}
+body.page-template-callback-discussion #top h1, body.page-template-callback-discussion #top .h1 {
+  text-align: center;
+  font-weight: 400;
+  color: var(--ami-text);
 }

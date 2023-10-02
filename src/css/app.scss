@@ -1,5 +1,8 @@
 :root {
-    --primary-color: #208EF4;
+    --ami-purple: #932682;
+    --ami-blue: #003B78;
+    --ami-text: #333333;
+    --ami-border-radius: 25px;
 }
 
 @import "~bootstrap/scss/bootstrap";
@@ -9,6 +12,15 @@ body.page-template-callback-discussion {
         width: 100% !important;
     }
 
+    h1, h2, h3, h4, h5, h6, p, a {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
     @import "_partials/header";
     @import "_partials/footer";
+    @import "_partials/cards";
 }
