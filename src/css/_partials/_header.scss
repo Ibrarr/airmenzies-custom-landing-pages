@@ -1,0 +1,27 @@
+.header__container {
+  background: #003B78;
+
+  &:before, &:after {
+    display: none;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    background: none;
+    height: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    &:after {
+      display: none;
+    }
+
+    .header-text {
+      margin: 0 0 0 20px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+}

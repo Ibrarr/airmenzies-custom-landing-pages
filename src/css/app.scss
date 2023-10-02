@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #208EF4;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+body.page-template-callback-discussion {
+    > .boxed-container {
+        width: 100% !important;
+    }
+
+    @import "_partials/header";
+    @import "_partials/footer";
+}
