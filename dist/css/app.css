@@ -13422,16 +13422,17 @@ textarea.form-control-lg {
 body.page-template-callback-discussion > .boxed-container {
   width: 100% !important;
 }
-body.page-template-callback-discussion h1, body.page-template-callback-discussion .h1, body.page-template-callback-discussion h2, body.page-template-callback-discussion .h2, body.page-template-callback-discussion h3, body.page-template-callback-discussion .h3, body.page-template-callback-discussion h4, body.page-template-callback-discussion .h4, body.page-template-callback-discussion h5, body.page-template-callback-discussion .h5, body.page-template-callback-discussion h6, body.page-template-callback-discussion .h6, body.page-template-callback-discussion a {
+body.page-template-callback-discussion h1, body.page-template-callback-discussion .h1, body.page-template-callback-discussion h2, body.page-template-callback-discussion .h2, body.page-template-callback-discussion h3, body.page-template-callback-discussion .h3, body.page-template-callback-discussion h4, body.page-template-callback-discussion .h4, body.page-template-callback-discussion h5, body.page-template-callback-discussion .h5, body.page-template-callback-discussion h6, body.page-template-callback-discussion .h6 {
   font-family: "Montserrat", sans-serif;
   color: var(--ami-text);
 }
-body.page-template-callback-discussion p {
+body.page-template-callback-discussion p, body.page-template-callback-discussion a {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: var(--ami-text);
 }
 body.page-template-callback-discussion .cta-button {
+  font-family: "Montserrat", sans-serif !important;
   display: block;
   text-align: center;
   width: -webkit-fit-content;
@@ -13508,6 +13509,9 @@ body.page-template-callback-discussion footer:after {
 body.page-template-callback-discussion footer p {
   color: #ffffff;
   margin: 0;
+}
+body.page-template-callback-discussion footer p a {
+  color: #ffffff !important;
 }
 body.page-template-callback-discussion #cards {
   margin-top: -60px;

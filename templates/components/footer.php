@@ -14,7 +14,7 @@
            </div>
 
            <div class="col-sm-6">
-               <p class="text-sm-end">Privacy Policy |  FAQ  |  Contact</p>
+               <p class="text-sm-end"><a href="https://airmenzies.com/policies/privacy-policy/">Privacy Policy</a> |  FAQ  |  Contact</p>
            </div>
        </div>
     </div>
