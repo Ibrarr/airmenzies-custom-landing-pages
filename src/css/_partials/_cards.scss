@@ -10,10 +10,6 @@
     margin-bottom: 50px;
   }
 
-  > div > div > div {
-    margin-bottom: 20px;
-  }
-
   .single-card {
     display: flex;
     flex-direction: column;
@@ -31,6 +27,10 @@
       padding: 20px 20px 0;
       background-color: #ffffff;
       transition: var(--ami-transition);
+
+      img {
+        width: 60px;
+      }
 
       svg {
         width: 60px;

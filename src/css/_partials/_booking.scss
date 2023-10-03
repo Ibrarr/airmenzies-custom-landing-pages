@@ -1,0 +1,41 @@
+#booking {
+  margin-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .callback, .discussion {
+    padding: 20px;
+    height: 100%;
+    box-shadow: var(--ami-box-shadow);
+    border-radius: var(--ami-border-radius);
+
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0;
+      }
+
+      svg, img {
+        width: 50px;
+      }
+    }
+
+    .cta-button {
+      background-color: var(--ami-purple);
+
+      &:hover {
+        background-color: var(--ami-purple-hover)
+      }
+    }
+  }
+}

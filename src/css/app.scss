@@ -3,6 +3,7 @@
     --ami-purple-hover: #B22C9D;
     --ami-blue: #003B78;
     --ami-blue-hover: #004B99;
+    --ami-light-blue: #CCD6E1;
     --ami-text: #333333;
     --ami-border-radius: 25px;
     --ami-box-shadow: 0 2px 3px 1px #00000040;
@@ -40,8 +41,14 @@ body.page-template-callback-discussion {
         transition: var(--ami-transition);
     }
 
+    .pum iframe {
+        min-height: fit-content !important;
+    }
+
     @import "_partials/header";
     @import "_partials/footer";
     @import "_partials/cards";
     @import "_partials/video";
+    @import "_partials/testimonials";
+    @import "_partials/booking";
 }

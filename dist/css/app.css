@@ -4,6 +4,7 @@
   --ami-purple-hover: #B22C9D;
   --ami-blue: #003B78;
   --ami-blue-hover: #004B99;
+  --ami-light-blue: #CCD6E1;
   --ami-text: #333333;
   --ami-border-radius: 25px;
   --ami-box-shadow: 0 2px 3px 1px #00000040;
@@ -13445,6 +13446,11 @@ body.page-template-callback-discussion .cta-button {
   -webkit-transition: var(--ami-transition);
   transition: var(--ami-transition);
 }
+body.page-template-callback-discussion .pum iframe {
+  min-height: -webkit-fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
+}
 body.page-template-callback-discussion .header__container {
   background: var(--ami-blue);
 }
@@ -13509,9 +13515,6 @@ body.page-template-callback-discussion #cards h1, body.page-template-callback-di
   font-weight: 400;
   margin-bottom: 50px;
 }
-body.page-template-callback-discussion #cards > div > div > div {
-  margin-bottom: 20px;
-}
 body.page-template-callback-discussion #cards .single-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13535,6 +13538,9 @@ body.page-template-callback-discussion #cards .single-card .heading {
   background-color: #ffffff;
   -webkit-transition: var(--ami-transition);
   transition: var(--ami-transition);
+}
+body.page-template-callback-discussion #cards .single-card .heading img {
+  width: 60px;
 }
 body.page-template-callback-discussion #cards .single-card .heading svg {
   width: 60px;
@@ -13586,4 +13592,79 @@ body.page-template-callback-discussion #cards .single-card .content .cta-button:
 }
 body.page-template-callback-discussion #video h1, body.page-template-callback-discussion #video .h1 {
   font-weight: 400;
+}
+body.page-template-callback-discussion #video .video-container {
+  border-radius: var(--ami-border-radius);
+  border: 2px solid var(--ami-blue);
+  overflow: hidden;
+  opacity: 0.5;
+  -webkit-transition: var(--ami-transition);
+  transition: var(--ami-transition);
+}
+body.page-template-callback-discussion #video .video-container:hover {
+  opacity: 1;
+}
+body.page-template-callback-discussion #video .video-container .embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+body.page-template-callback-discussion #video .video-container .embed iframe, body.page-template-callback-discussion #video .video-container .embed object, body.page-template-callback-discussion #video .video-container .embed embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body.page-template-callback-discussion #testimonials {
+  margin: 30px 0;
+  background-color: var(--ami-light-blue);
+}
+body.page-template-callback-discussion #testimonials h1, body.page-template-callback-discussion #testimonials .h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+body.page-template-callback-discussion #booking {
+  margin-bottom: 50px;
+}
+body.page-template-callback-discussion #booking h1, body.page-template-callback-discussion #booking .h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+body.page-template-callback-discussion #booking .callback, body.page-template-callback-discussion #booking .discussion {
+  padding: 20px;
+  height: 100%;
+  -webkit-box-shadow: var(--ami-box-shadow);
+  box-shadow: var(--ami-box-shadow);
+  border-radius: var(--ami-border-radius);
+}
+body.page-template-callback-discussion #booking .callback .heading, body.page-template-callback-discussion #booking .discussion .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+body.page-template-callback-discussion #booking .callback .heading p, body.page-template-callback-discussion #booking .discussion .heading p {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+body.page-template-callback-discussion #booking .callback .heading svg, body.page-template-callback-discussion #booking .callback .heading img, body.page-template-callback-discussion #booking .discussion .heading svg, body.page-template-callback-discussion #booking .discussion .heading img {
+  width: 50px;
+}
+body.page-template-callback-discussion #booking .callback .cta-button, body.page-template-callback-discussion #booking .discussion .cta-button {
+  background-color: var(--ami-purple);
+}
+body.page-template-callback-discussion #booking .callback .cta-button:hover, body.page-template-callback-discussion #booking .discussion .cta-button:hover {
+  background-color: var(--ami-purple-hover);
 }
