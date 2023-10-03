@@ -37,7 +37,7 @@
                         <div class="header-content">
                             <p class="fw-bold mb-5"><?php the_field('header_content_heading'); ?></p>
                             <p><?php the_field('header_content_text'); ?></p>
-                            <a class="header-cta" href="<?php echo get_field('header_cta_button')['url'] ?>" target="<?php echo get_field('header_cta_button')['target'] ?>"><?php echo get_field('header_cta_button')['title'] ?></a>
+                            <a class="cta-button" href="<?php echo get_field('header_cta_button')['url'] ?>" target="<?php echo get_field('header_cta_button')['target'] ?>"><?php echo get_field('header_cta_button')['title'] ?></a>
                         </div>
                     </div>
                     <div class="col-md-3 offset-md-1 d-none d-md-block">
