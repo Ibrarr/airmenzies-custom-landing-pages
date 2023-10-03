@@ -13451,6 +13451,11 @@ body.page-template-callback-discussion .pum iframe {
   min-height: -moz-fit-content !important;
   min-height: fit-content !important;
 }
+body.page-template-callback-discussion .scale-zero {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
 body.page-template-callback-discussion .header__container {
   background: var(--ami-blue);
 }
@@ -13591,6 +13596,7 @@ body.page-template-callback-discussion #cards .single-card .content .cta-button:
   background-color: var(--ami-blue-hover);
 }
 body.page-template-callback-discussion #video h1, body.page-template-callback-discussion #video .h1 {
+  margin-top: 50px;
   font-weight: 400;
 }
 body.page-template-callback-discussion #video .video-container {
@@ -13620,12 +13626,51 @@ body.page-template-callback-discussion #video .video-container .embed iframe, bo
 }
 body.page-template-callback-discussion #testimonials {
   margin: 30px 0;
+  padding-bottom: 30px;
   background-color: var(--ami-light-blue);
 }
 body.page-template-callback-discussion #testimonials h1, body.page-template-callback-discussion #testimonials .h1 {
   text-align: center;
   font-weight: 400;
   margin-bottom: 20px;
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: var(--ami-transition);
+  transition: var(--ami-transition);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide.is-next + li {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide:nth-child(odd) {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide:nth-child(odd) p:last-child {
+  text-align: right;
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide .testimonial {
+  background-color: #ffffff;
+  border: 2px solid var(--ami-blue);
+  border-radius: var(--ami-border-radius);
+  padding: 20px;
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide .testimonial p:last-child {
+  margin: 0;
+}
+body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide .testimonial p:last-child strong {
+  color: var(--ami-purple);
 }
 body.page-template-callback-discussion #booking {
   margin-bottom: 50px;
@@ -13667,4 +13712,10 @@ body.page-template-callback-discussion #booking .callback .cta-button, body.page
 }
 body.page-template-callback-discussion #booking .callback .cta-button:hover, body.page-template-callback-discussion #booking .discussion .cta-button:hover {
   background-color: var(--ami-purple-hover);
+}
+
+@media only screen and (max-width: 991px) {
+  body.page-template-callback-discussion #testimonials #testimonials-slider .splide__slide .testimonial {
+    width: 75% !important;
+  }
 }

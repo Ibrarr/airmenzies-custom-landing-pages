@@ -45,6 +45,10 @@ body.page-template-callback-discussion {
         min-height: fit-content !important;
     }
 
+    .scale-zero {
+        transform: scale(0);
+    }
+
     @import "_partials/header";
     @import "_partials/footer";
     @import "_partials/cards";
@@ -52,3 +56,5 @@ body.page-template-callback-discussion {
     @import "_partials/testimonials";
     @import "_partials/booking";
 }
+
+@import "_partials/mediaquery";

@@ -86,7 +86,42 @@
     <section id="testimonials">
         <div class="container">
             <h1><?php the_field('testimonials_heading'); ?></h1>
-
+            <div class="splide" id="testimonials-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu”</p>
+                                <p><strong>Callum Grey</strong>, Customer</p>
+                             </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu”</p>
+                                <p><strong>Callum Grey</strong>, Customer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu”</p>
+                                <p><strong>Callum Grey</strong>, Customer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu”</p>
+                                <p><strong>Callum Grey</strong>, Customer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="testimonial">
+                                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu”</p>
+                                <p><strong>Callum Grey</strong>, Customer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
