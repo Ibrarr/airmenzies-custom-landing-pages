@@ -22,11 +22,10 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use App\EnqueueScripts;
-use App\Templates;
+$templates = new \App\Templates();
+$enqueueScripts = new \App\EnqueueScripts();
+$svgSupport = new \App\SvgSupport();
 
-$templates = new Templates;
-$enqueueScripts = new EnqueueScripts;
 
 define('ACLP_IMAGES', plugin_dir_url(__FILE__) . 'src/images/');
 
