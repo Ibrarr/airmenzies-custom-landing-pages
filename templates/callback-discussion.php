@@ -129,7 +129,7 @@
         <div class="container">
             <h1><?php the_field('booking_heading'); ?></h1>
             <div class="row gx-md-5">
-                <div class="col-md-6 mb-5 mb-md-0">
+                <div class="col-md-6 mb-5 mb-md-0 pe-md-5">
                     <div class="callback">
                         <div class="heading">
                             <p><?php the_field('booking_callback_heading'); ?></p>
@@ -145,10 +145,10 @@
                             ?>
                         </div>
                         <p><?php the_field('booking_callback_text') ?></p>
-                        <a class="cta-button" href="#" onclick="PUM.open(<?php the_field('booking_callback_popup') ?>);"><?php the_field('booking_callback_button') ?></a>
+                        <button class="cta-button" onclick="PUM.open(<?php the_field('booking_callback_popup') ?>);"><?php the_field('booking_callback_button') ?></button>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 ps-md-5">
                     <div class="discussion">
                         <div class="heading">
                             <p><?php the_field('booking_discussion_heading'); ?></p>
@@ -164,7 +164,7 @@
                             ?>
                         </div>
                         <p><?php the_field('booking_discussion_text') ?></p>
-                        <a class="cta-button" href="#" onclick="PUM.open(<?php the_field('booking_discussion_popup') ?>);"><?php the_field('booking_discussion_button') ?></a>
+                        <button class="cta-button" onclick="PUM.open(<?php the_field('booking_discussion_popup') ?>);"><?php the_field('booking_discussion_button') ?></button>
                     </div>
                 </div>
             </div>

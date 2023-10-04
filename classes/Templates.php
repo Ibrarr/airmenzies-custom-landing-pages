@@ -13,6 +13,7 @@ class Templates
         ];
         add_filter('theme_page_templates', [$this, 'custom_template']);
         add_filter('template_include', [$this, 'load_template']);
+        add_filter('use_block_editor_for_post', [$this, 'disable_gutenberg_for_template'], 10, 2);
     }
 
     public function custom_template($templates)
@@ -36,5 +37,15 @@ class Templates
             return $file;
         }
         return $template;
+    }
+
+    function disable_gutenberg_for_template($can_edit, $post) {
+        if (!$post) return $can_edit;
+
+        $template_file = get_page_template_slug($post->ID);
+        if ($template_file == 'templates/callback-discussion.php') {
+            return false;
+        }
+        return $can_edit;
     }
 }

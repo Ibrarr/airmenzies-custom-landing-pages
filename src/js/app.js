@@ -8,6 +8,7 @@ jQuery(function ($) {
             updateOnMove: true,
             autoplay    : true,
             pauseOnHover: true,
+            drag        : false,
             pagination  : false,
             arrows      : false,
             perPage     : 3,

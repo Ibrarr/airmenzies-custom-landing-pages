@@ -10,7 +10,7 @@
     <div class="container">
        <div class="row">
            <div class="col-sm-6">
-               <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu</p>
+               <p class="mb-4 mb-sm-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu</p>
            </div>
 
            <div class="col-sm-6">
