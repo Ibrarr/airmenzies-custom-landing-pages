@@ -41,6 +41,10 @@
         }
       }
 
+      img {
+        transition: var(--ami-transition);
+      }
+
       h3 {
         color: var(--ami-blue);
         transition: var(--ami-transition);
@@ -55,6 +59,10 @@
 
         svg path {
           fill: #ffffff;
+        }
+
+        img {
+          filter: grayscale(100%) brightness(100);
         }
 
         h3 {
