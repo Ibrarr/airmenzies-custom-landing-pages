@@ -14,6 +14,7 @@ class EnqueueScripts
         if (is_page_template('templates/callback-discussion.php')) {
             $my_css_ver  = date("ymd-Gis", filemtime(ACLP_DIST_PATH.'css/app.css'));
             $splide_css_ver  = date("ymd-Gis", filemtime(ACLP_DIST_PATH.'css/splide.css'));
+
             $my_js_ver = date("ymd-Gis", filemtime(ACLP_DIST_PATH.'js/app.js'));
             $splide_js_ver = date("ymd-Gis", filemtime(ACLP_DIST_PATH.'js/splide.js'));
 

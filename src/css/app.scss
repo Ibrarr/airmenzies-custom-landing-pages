@@ -47,6 +47,12 @@ body.page-template-callback-discussion {
         min-height: fit-content !important;
     }
 
+    .pum-overlay.pum-active,
+    .pum-overlay.pum-active .popmake.active {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
     .scale-zero {
         transform: scale(0);
     }
@@ -57,6 +63,7 @@ body.page-template-callback-discussion {
     @import "_partials/video";
     @import "_partials/testimonials";
     @import "_partials/booking";
+    @import "_partials/select-region";
 }
 
 @import "_partials/mediaquery";

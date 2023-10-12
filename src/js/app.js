@@ -11,6 +11,7 @@ jQuery(function ($) {
             drag        : false,
             pagination  : false,
             arrows      : false,
+            start       : 1,
             perPage     : 3,
             perMove     : 1,
             breakpoints : {
