@@ -29,7 +29,6 @@ $addAcfField = new \App\AddAcfField();
 
 
 define('ACLP_IMAGES', plugin_dir_url(__FILE__) . 'src/images/');
-
 define('ACLP_COMPONENTS', plugin_dir_path(__FILE__) . 'templates/components');
 define('ACLP_DIST_PATH', plugin_dir_path(__FILE__) . 'dist/');
 define('ACLP_DIST_URL', plugin_dir_url(__FILE__) . 'dist/');
