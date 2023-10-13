@@ -77,7 +77,24 @@
 
             <div class="video-container">
                 <div class="embed">
-                    <?php the_field('video_video'); ?>
+                    <?php
+                    $iframe = get_field('video_video');
+
+                    preg_match('/src="(.+?)"/', $iframe, $matches);
+                    $src = $matches[1];
+
+                    $params = array(
+                        'autoplay' => 1,
+                        'muted' => 1
+                    );
+                    $new_src = add_query_arg($params, $src);
+                    $iframe = str_replace($src, $new_src, $iframe);
+
+                    $attributes = 'frameborder="0"';
+                    $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                    echo $iframe;
+                    ?>
                 </div>
             </div>
         </div>
