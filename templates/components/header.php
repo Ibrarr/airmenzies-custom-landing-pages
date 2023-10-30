@@ -28,7 +28,7 @@
                     <div class="col-md-8">
                         <div class="header-logo">
                             <a href="<?php echo esc_url( home_url() ); ?>">
-                                <img src="<?php echo ACLP_IMAGES.'AMI_LOGO.png' ?>" alt="AMI - the leading air freight wholesaler" srcset="<?php echo ACLP_IMAGES.'AMI_LOGO.png' ?>"/>
+                                <img src="<?php the_field('ami_logo') ?>" alt="AMI - the leading air freight wholesaler"/>
                             </a>
 
                             <h1 class="main-header-text"><?php the_field('header_main_heading') ?></h1>
