@@ -37,8 +37,8 @@
                         <div class="header-content">
                             <p class="fw-bold mb-5"><?php the_field('header_content_heading'); ?></p>
                             <p><?php the_field('header_content_text'); ?></p>
-	                        <?php if (get_sub_field('header_cta_button')) { ?>
-                                <a class="cta-button" <?php echo get_field('header_popup') ? 'onclick="PUM.open(' . get_field('header_popup') . ');" ' : ''; ?>href="<?php echo get_field('header_cta_button')['url']; ?>" target="<?php echo get_field('header_cta_button')['target']; ?>"><?php echo get_field('header_cta_button')['title']; ?></a>
+	                        <?php if (get_field('header_cta_button')) { ?>
+                                <a class="cta-button" <?php echo get_field('header_popup') ? 'onclick="PUM.open(' . get_field('header_popup') . ');" ' : ''; ?> href="<?php echo get_field('header_cta_button')['url']; ?>" target="<?php echo get_field('header_cta_button')['target']; ?>"><?php echo get_field('header_cta_button')['title']; ?></a>
 	                        <?php } ?>
                         </div>
                     </div>
