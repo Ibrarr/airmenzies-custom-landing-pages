@@ -10,11 +10,11 @@
     <div class="container">
        <div class="row">
            <div class="col-sm-6">
-               <p class="mb-4 mb-sm-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu</p>
+               <p class="mb-4 mb-sm-0"><?php the_field('footer_main_text'); ?></p>
            </div>
 
            <div class="col-sm-6">
-               <p class="text-sm-end"><a href="https://airmenzies.com/policies/privacy-policy/">Privacy Policy</a> |  FAQ  |  Contact</p>
+               <p class="text-sm-end"><a href="<?php the_field('footer_privacy_policy_link'); ?>">Privacy Policy</a> |  <a href="<?php the_field('footer_faq_link'); ?>">FAQ</a>  |  <a href="<?php the_field('footer_contact_link'); ?>">Contact</a></p>
            </div>
        </div>
     </div>
