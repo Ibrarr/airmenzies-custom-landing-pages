@@ -4,7 +4,7 @@
 
   h3 {
     text-align: center;
-    color: var(--ami-text);
+    color: $ami-text;
     margin-bottom: 20px;
   }
 
@@ -14,13 +14,13 @@
     button {
       min-width: 100% !important; 
       height: 100%;
-      background-color: var(--ami-purple);
+      background-color: $ami-purple;
       display: flex;
       justify-content: center;
       align-items: center;
 
       &:hover {
-        background-color: var(--ami-purple-hover)
+        background-color: $ami-purple-hover;
       }
     }
   }

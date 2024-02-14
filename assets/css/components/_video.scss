@@ -5,11 +5,11 @@
   }
 
   .video-container {
-    border-radius: var(--ami-border-radius);
-    border: 2px solid var(--ami-blue);
+    border-radius: $ami-border-radius;
+    border: 2px solid $ami-blue;
     overflow: hidden;
     opacity: .5;
-    transition: var(--ami-transition);
+    transition: $ami-transition;
 
     &:hover {
       opacity: 1;

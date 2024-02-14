@@ -1,5 +1,5 @@
 .header__container {
-  background: var(--ami-blue);
+  background: $ami-blue;
 
   &:before, &:after {
     display: none;
@@ -25,18 +25,18 @@
 
     .header-content {
       background-color: #ffffff;
-      border-radius: var(--ami-border-radius);
+      border-radius: $ami-border-radius;
       padding: 30px 35px;
       margin-top: 30px;
-      box-shadow: var(--ami-box-shadow);
+      box-shadow: $ami-box-shadow;
       position: relative;
       z-index: 1;
 
       .cta-button {
-        background-color: var(--ami-purple);
+        background-color: $ami-purple;
 
         &:hover {
-          background-color: var(--ami-purple-hover)
+          background-color: $ami-purple-hover;
         }
       }
     }

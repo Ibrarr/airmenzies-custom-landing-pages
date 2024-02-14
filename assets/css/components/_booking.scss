@@ -10,8 +10,8 @@
   .callback, .discussion {
     padding: 20px;
     height: 100%;
-    box-shadow: var(--ami-box-shadow);
-    border-radius: var(--ami-border-radius);
+    box-shadow: $ami-box-shadow;
+    border-radius: $ami-border-radius;
 
     .heading {
       display: flex;
@@ -33,10 +33,10 @@
     }
 
     .cta-button {
-      background-color: var(--ami-purple);
+      background-color: $ami-purple;
 
       &:hover {
-        background-color: var(--ami-purple-hover)
+        background-color: $ami-purple-hover;
       }
     }
   }
