@@ -33,11 +33,7 @@
       z-index: 1;
 
       .cta-button {
-        background-color: $ami-purple;
-
-        &:hover {
-          background-color: $ami-purple-hover;
-        }
+        @include cta-button($ami-purple, $ami-purple-hover);
       }
     }
 

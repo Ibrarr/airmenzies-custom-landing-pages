@@ -371,6 +371,26 @@ class AddAcfField
 				    'endpoint' => 0,
 			    ),
 			    array(
+				    'key' => 'field_66164f117702c',
+				    'label' => 'Enable Video',
+				    'name' => 'enable_video',
+				    'aria-label' => '',
+				    'type' => 'true_false',
+				    'instructions' => '',
+				    'required' => 0,
+				    'conditional_logic' => 0,
+				    'wrapper' => array(
+					    'width' => '',
+					    'class' => '',
+					    'id' => '',
+				    ),
+				    'message' => '',
+				    'default_value' => 0,
+				    'ui_on_text' => '',
+				    'ui_off_text' => '',
+				    'ui' => 1,
+			    ),
+			    array(
 				    'key' => 'field_651be65ed6178',
 				    'label' => 'Heading',
 				    'name' => 'video_heading',
@@ -378,7 +398,15 @@ class AddAcfField
 				    'type' => 'text',
 				    'instructions' => '',
 				    'required' => 1,
-				    'conditional_logic' => 0,
+				    'conditional_logic' => array(
+					    array(
+						    array(
+							    'field' => 'field_66164f117702c',
+							    'operator' => '==',
+							    'value' => '1',
+						    ),
+					    ),
+				    ),
 				    'wrapper' => array(
 					    'width' => '',
 					    'class' => '',
@@ -398,7 +426,15 @@ class AddAcfField
 				    'type' => 'oembed',
 				    'instructions' => '',
 				    'required' => 1,
-				    'conditional_logic' => 0,
+				    'conditional_logic' => array(
+					    array(
+						    array(
+							    'field' => 'field_66164f117702c',
+							    'operator' => '==',
+							    'value' => '1',
+						    ),
+					    ),
+				    ),
 				    'wrapper' => array(
 					    'width' => '',
 					    'class' => '',

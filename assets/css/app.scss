@@ -7,35 +7,32 @@
 // Variables
 @import 'variables';
 
-body.page-template-callback-discussion {
-    > .boxed-container {
-        width: 100% !important;
-    }
+// Mixins
+@import 'mixins';
 
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Montserrat", sans-serif;
-        color: $ami-text;
-    }
+body {
 
-    p, a, ul, li {
-        font-family: "Lato", sans-serif;
-        font-size: 16px;
-        color: $ami-text;
-    }
+    &.page-template-callback-discussion {
+        > .boxed-container {
+            width: 100% !important;
+        }
 
-    .cta-button {
-        font-family: "Montserrat", sans-serif !important;
-        display: block;
-        text-align: center;
-        width: fit-content;
-        min-width: 150px;
-        font-size: 18px;
-        color: #ffffff;
-        font-weight: bold;
-        padding: 10px 20px;
-        border: none;
-        border-radius: $ami-border-radius;
-        transition: $ami-transition;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+            color: $ami-text;
+        }
+
+        p, a, ul, li, span, label, input, select, .gfield_consent_description {
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            color: $ami-text;
+        }
+
+        @import "components/header";
+        @import "components/footer";
+        @import "components/cards";
+        @import "components/video";
+        @import "components/testimonials";
     }
 
     .pum iframe {
@@ -52,11 +49,7 @@ body.page-template-callback-discussion {
         transform: scale(0);
     }
 
-    @import "components/header";
-    @import "components/footer";
-    @import "components/cards";
-    @import "components/video";
-    @import "components/testimonials";
     @import "components/booking";
     @import "components/select-region";
+    @import "components/form";
 }

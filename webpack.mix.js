@@ -1,8 +1,12 @@
 let mix = require('laravel-mix');
 
 mix.js([
-    'assets/js/app.js',
+    'assets/js/form.js',
 ], 'js/app.js');
+
+mix.js([
+    'assets/js/testimonial-slider.js',
+], 'js/testimonial.js');
 
 mix.sass('assets/css/app.scss', 'css/app.css')
     .options({

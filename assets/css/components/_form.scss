@@ -1,0 +1,92 @@
+.ami-multistep-form_wrapper {
+
+  .gform_heading {
+    display: none;
+  }
+
+  .gform_fields {
+    grid-row-gap: 20px;
+  }
+
+  .gfield_radio {
+    .gchoice {
+      grid-template-columns: none !important;
+
+      input {
+        display: none !important;
+
+        &:checked + label {
+          background: $ami-light-blue;
+        }
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $ami-light-blue;
+        border-radius: $ami-border-radius;
+        padding: 20px;
+        margin: 0 !important;
+        cursor: pointer;
+        height: 300px;
+        transition: all .3s;
+
+        &:hover {
+          box-shadow: inset 0 0 0 2px $ami-light-blue;
+        }
+
+        img {
+          width: 150px;
+        }
+
+        span {
+          width: 75%;
+          margin-top: 0;
+          text-align: center;
+          font-weight: 600;
+
+          img {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  input:focus, select:focus {
+    border-color: $ami-purple !important;
+    box-shadow: none !important;
+  }
+
+  #gform_page_1_1, #gform_page_2_1, #gform_page_3_1 {
+    .gform_page_footer {
+      justify-content: flex-end;
+    }
+  }
+
+  .gform_page_footer {
+    justify-content: space-between;
+
+    .gform-loader {
+      display: none;
+    }
+
+    input.gform_next_button, input[type="submit"] {
+      @include cta-button($ami-purple, $ami-purple-hover);
+
+      &:disabled {
+        cursor: not-allowed !important;
+      }
+    }
+
+    input.gform_previous_button {
+      @include cta-button-border($ami-blue, $ami-blue-hover);
+
+      &:disabled {
+        cursor: not-allowed !important;
+      }
+    }
+  }
+}

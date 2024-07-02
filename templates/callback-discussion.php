@@ -39,6 +39,7 @@
         </div>
     </section>
 
+    <?php if ( get_field('enable_video') ) { ?>
     <section id="video">
         <div class="container">
             <h1><?php the_field('video_heading'); ?></h1>
@@ -67,6 +68,7 @@
             </div>
         </div>
     </section>
+    <?php } ?>
 
     <?php if ( get_field('enable_testimonials') ) { ?>
     <section id="testimonials">

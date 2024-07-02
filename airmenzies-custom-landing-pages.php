@@ -26,7 +26,7 @@ $templates = new \App\Templates();
 $enqueueScripts = new \App\EnqueueScripts();
 $svgSupport = new \App\SvgSupport();
 $addAcfField = new \App\AddAcfField();
-
+$disableGformEntryCreation = new \App\DisableGformEntryCreation();
 
 define('ACLP_IMAGES', plugin_dir_url( __FILE__ ) . 'assets/images/' );
 define('ACLP_COMPONENTS', plugin_dir_path(__FILE__) . 'templates/components');

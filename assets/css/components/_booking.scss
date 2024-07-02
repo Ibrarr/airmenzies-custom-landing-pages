@@ -24,6 +24,7 @@
         font-size: 20px;
         margin: 0;
         font-family: "Montserrat",sans-serif;
+        color: $ami-text;
       }
 
       svg, img {
@@ -33,11 +34,7 @@
     }
 
     .cta-button {
-      background-color: $ami-purple;
-
-      &:hover {
-        background-color: $ami-purple-hover;
-      }
+      @include cta-button($ami-purple, $ami-purple-hover);
     }
   }
 }

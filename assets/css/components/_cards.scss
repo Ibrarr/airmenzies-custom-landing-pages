@@ -76,12 +76,8 @@
       padding: 20px;
 
       .cta-button {
+        @include cta-button($ami-blue, $ami-blue-hover);
         margin-left: auto;
-        background-color: $ami-blue;
-
-        &:hover {
-          background-color: $ami-blue-hover;
-        }
       }
     }
   }

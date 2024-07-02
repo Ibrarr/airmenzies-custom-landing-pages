@@ -1,0 +1,40 @@
+@mixin cta-button($button-color, $button-hover-color) {
+  font-family: "Montserrat", sans-serif !important;
+  display: block !important;
+  text-align: center !important;
+  width: fit-content !important;
+  min-width: 150px !important;
+  font-size: 18px !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  border-radius: $ami-border-radius !important;
+  transition: $ami-transition !important;
+  background-color: $button-color !important;
+
+  &:hover {
+    background: $button-hover-color !important;
+  }
+}
+
+@mixin cta-button-border($button-color, $button-hover-color) {
+  font-family: "Montserrat", sans-serif !important;
+  display: block !important;
+  text-align: center !important;
+  width: fit-content !important;
+  min-width: 150px !important;
+  font-size: 18px !important;
+  color: $button-color !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border-radius: $ami-border-radius !important;
+  transition: $ami-transition !important;
+  border: 2px solid $button-color !important;
+
+  &:hover {
+    background: $button-hover-color !important;
+    border-color: $button-hover-color !important;
+    color: #ffffff !important;
+  }
+}
